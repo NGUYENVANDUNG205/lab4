@@ -167,3 +167,91 @@ Bạn hoàn thành bài mẫu khi có đủ:
 - API `/forecast` trả `predicted_value`, `risk_level`, `recommendation`, `safety_note`.
 - Bạn giải thích được vì sao Lab 4 không dùng Precision/Recall/F1 như Lab 3.
 - Bạn giải thích được vì sao dự báo cao chưa được phép tự động cắt/bật thiết bị.
+
+# LAB 4: Forecasting & Predictive Analytics cho dữ liệu IoT
+
+## 1. Giới thiệu
+
+Lab 4 xây dựng pipeline dự báo năng lượng tiêu thụ cho dữ liệu IoT.
+
+Bài toán chính là sử dụng dữ liệu lịch sử để dự báo giá trị `Appliances` trong 10 phút tiếp theo. Sau khi có kết quả dự báo, hệ thống chuyển `predicted_value` thành `risk_level`, `recommendation` và `safety_note`.
+
+Output chính của Lab 4:
+
+- `predicted_value`
+- `forecast_error`
+- `risk_level`
+- `recommendation`
+- `forecast_log.csv`
+- API `/forecast`
+
+---
+
+## 2. Lab 4 khác Lab 3 ở đâu?
+
+| Nội dung | Lab 3 | Lab 4 |
+|---|---|---|
+| Câu hỏi chính | Hệ thống có đang bất thường không? | Giá trị sắp tới sẽ là bao nhiêu? |
+| Bài toán | Anomaly Detection | Forecasting |
+| Output model | `anomaly_score`, `is_anomaly` | `predicted_value` |
+| Metric | Precision, Recall, F1 | MAE, RMSE, MAPE, Bias |
+| API | `/detect-anomaly` | `/forecast` |
+| Log | `anomaly_event_log.csv` | `forecast_log.csv` |
+
+---
+
+## 3. Dataset
+
+Dataset sử dụng: **UCI Appliances Energy Prediction**
+
+Target cần dự báo:
+
+```text
+Ý nghĩa:
+
+Năng lượng tiêu thụ của thiết bị gia dụng trong mỗi khoảng 10 phút, đơn vị Wh.
+
+Các trường dữ liệu gồm:
+
+date
+Appliances
+lights
+nhiệt độ và độ ẩm các phòng
+dữ liệu thời tiết ngoài trời
+áp suất
+gió
+visibility
+dew point
+
+Nếu máy có Internet, project tải dataset UCI chính thức. Nếu không có Internet, project dùng file fallback:
+
+data/sample_energydata_complete.csv
+4. Pipeline xử lý
+
+Luồng chính của Lab 4:
+
+UCI Appliances telemetry
+→ time-series feature engineering
+→ lag / rolling / delta / time features
+→ chronological train/test split
+→ baseline forecasting
+→ machine learning forecasting
+→ advanced model demo
+→ predicted_value
+→ risk_level
+→ recommendation
+→ forecast_log.csv
+→ API /forecast
+Appliances
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/2199a53f-c258-4f34-b2b7-a33f32121be0" />
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/6446bc11-3c1f-400a-a89f-76a7bbc79d96" />
+<img width="975" height="549" alt="image" src="https://github.com/user-attachments/assets/a8cf1570-886c-4a0c-9bc3-00582ab3e139" />
+<img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/44191b97-8903-416a-a1c6-6055f8998121" />
+<img width="1181" height="379" alt="image" src="https://github.com/user-attachments/assets/7fd3080f-a24f-4754-8731-e660a4f65bd2" />
+<img width="1133" height="380" alt="image" src="https://github.com/user-attachments/assets/d0c23ebc-3529-4196-8ac2-ee2d6bfce646" />
+<img width="1105" height="386" alt="image" src="https://github.com/user-attachments/assets/458ef312-9eb6-49a0-a1d0-d9daeab9de91" />
+
+
+
+
+
