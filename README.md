@@ -243,7 +243,7 @@ UCI Appliances telemetry
 → forecast_log.csv
 → API /forecast
 Appliances
-
+```
 ## Kết quả thực nghiệm
 
 ### Forecast Error Over Time
