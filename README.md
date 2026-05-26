@@ -247,9 +247,11 @@ Appliances
 <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/6446bc11-3c1f-400a-a89f-76a7bbc79d96" />
 <img width="975" height="549" alt="image" src="https://github.com/user-attachments/assets/a8cf1570-886c-4a0c-9bc3-00582ab3e139" />
 <img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/44191b97-8903-416a-a1c6-6055f8998121" />
-<img width="1181" height="379" alt="image" src="https://github.com/user-attachments/assets/7fd3080f-a24f-4754-8731-e660a4f65bd2" />
-<img width="1133" height="380" alt="image" src="https://github.com/user-attachments/assets/d0c23ebc-3529-4196-8ac2-ee2d6bfce646" />
-<img width="1105" height="386" alt="image" src="https://github.com/user-attachments/assets/458ef312-9eb6-49a0-a1d0-d9daeab9de91" />
+![Forecast Error Over Time](figures/forecast_error_over_time.png)
+
+![Forecast vs Actual](figures/forecast_vs_actual.png)
+
+![Model Comparison MAE](figures/model_comparison_mae.png)
 
 
 
