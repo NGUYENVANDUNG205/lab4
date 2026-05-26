@@ -257,7 +257,9 @@ Appliances
 ### Model Comparison by MAE
 
 ![Model Comparison MAE](./figures/model_comparison_mae.png)
-```text
+
+
+
 ## Minh chứng deploy API
 
 ### Swagger Docs
@@ -284,7 +286,7 @@ Endpoint `/forecast` trả về `predicted_value`, `risk_level`, `recommendation
 Endpoint `/model-info` trả về thông tin model, target `Appliances`, forecast horizon 10 phút và metrics đánh giá.
 
 
-```
+
 
 
 
