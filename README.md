@@ -244,12 +244,11 @@ UCI Appliances telemetry
 → API /forecast
 Appliances
 
-![Forecast Error Over Time](figures/forecast_error_over_time.png)
+![Forecast Error Over Time](./figures/forecast_error_over_time.png)
 
-![Forecast vs Actual](figures/forecast_vs_actual.png)
+![Forecast vs Actual](./figures/forecast_vs_actual.png)
 
-![Model Comparison MAE](figures/model_comparison_mae.png)
-
+![Model Comparison MAE](./figures/model_comparison_mae.png)
 
 
 
