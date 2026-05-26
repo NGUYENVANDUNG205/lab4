@@ -258,7 +258,30 @@ Appliances
 
 ![Model Comparison MAE](./figures/model_comparison_mae.png)
 ```text
+## Minh chứng deploy API
 
+### Swagger Docs
+
+![Swagger Docs](./screenshots/api_docs.png)
+
+Trang Swagger hiển thị các endpoint chính của Lab 4 gồm `/health`, `/model-info` và `/forecast`.
+
+### Health API
+
+![Health API](./screenshots/api_health.png)
+
+Endpoint `/health` trả về `model_loaded: true`, chứng minh API đã load model thành công.
+
+### Forecast API
+
+![Forecast API](./screenshots/api_forecast.png)
+
+Endpoint `/forecast` trả về `predicted_value`, `risk_level`, `recommendation` và `safety_note`.
+### Model Info API
+
+![Model Info API](./screenshots/api_model_info.png)
+
+Endpoint `/model-info` trả về thông tin model, target `Appliances`, forecast horizon 10 phút và metrics đánh giá.
 
 
 ```
