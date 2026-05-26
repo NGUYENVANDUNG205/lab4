@@ -257,6 +257,11 @@ Appliances
 ### Model Comparison by MAE
 
 ![Model Comparison MAE](./figures/model_comparison_mae.png)
+```text
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/37f867f9-e0fc-4552-8124-2dc380c90742" />
+
+
+```
 
 
 
