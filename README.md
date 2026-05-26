@@ -243,15 +243,14 @@ UCI Appliances telemetry
 → forecast_log.csv
 → API /forecast
 Appliances
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/2199a53f-c258-4f34-b2b7-a33f32121be0" />
-<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/6446bc11-3c1f-400a-a89f-76a7bbc79d96" />
-<img width="975" height="549" alt="image" src="https://github.com/user-attachments/assets/a8cf1570-886c-4a0c-9bc3-00582ab3e139" />
-<img width="975" height="552" alt="image" src="https://github.com/user-attachments/assets/44191b97-8903-416a-a1c6-6055f8998121" />
+
 ![Forecast Error Over Time](figures/forecast_error_over_time.png)
 
 ![Forecast vs Actual](figures/forecast_vs_actual.png)
 
 ![Model Comparison MAE](figures/model_comparison_mae.png)
+
+
 
 
 
